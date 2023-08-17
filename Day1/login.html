@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Condensed:wght@300&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-family: 'Roboto Mono', monospace;
+          
+        }
+        body{
+            background: lightgray;
+        }
+
+       .login {
+        width: 300px;
+        margin: 100px auto;
+        background-color: bisque;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        border-radius: 12px;
+        /* border:solid black; */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+       }
+       .heading {
+        /* background-color: aqua; */
+        background: #1488CC;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        width: 100%;
+        text-align: center;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        font-weight: bold;
+       }
+
+       .content {
+            background-color: white;
+            /* border: solid black 2px; */
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+            min-height: 200px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+       }
+
+       form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            /* border-top-right-radius: 10%; */
+            
+       }
+
+       .checkbox {
+        display: block;
+       }
+
+       .button {
+        display: block;
+        padding: 10px;
+        margin-top: 7px;
+        color: white;
+        border-radius: 20px;
+        width:250px;
+        font-size: 15px;
+        font-weight: bold;
+
+        background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+       }
+
+       .email, .password {
+        display: block;
+        padding: 10px 10px;
+        margin: 7px 7px;
+        border-radius: 20px;
+        width: 220px;
+        border: solid 1px;
+       }
+
+       .checklabel, .forget-password {
+        display: inline;
+        
+       }
+
+       .heading h1{
+        color: white;
+        
+       }
+
+       form p {
+        margin-bottom: 20px;
+       }
+        /* .forget-password {
+         margin-left: 40px; 
+       }  */
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="heading">
+            <h1>Login form</h1>
+        </div>
+        <div class="content">
+            <form class="form">
+                <input type="email" name="Email Address" placeholder="Email" class="email">
+                <input type="password" name="Password" placeholder="Password" class="password">
+                
+                <label class="checklabel">
+                    <input type="checkbox" class="checkbox">
+                    Remember me
+                </label>
+                <a href="#" class="forget-password">Forgot Password?</a>
+                <button type="submit" class="button">Login</button>
+                <p>Not a member ? <a href="rgstrn.html">signup now</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

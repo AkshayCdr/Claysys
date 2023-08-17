@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Condensed:wght@300&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+
+
+    <style>
+   
+*{
+    margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto Mono', monospace;
+
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.radio-group label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+} 
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form action="#" method="post">
+          
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name">
+          
+          
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name">
+          
+          
+            <label for="date-of-birth">Date of Birth</label>
+            <input type="date" id="date-of-birth" name="date-of-birth">
+          
+          
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age">
+          
+          
+            <label>Gender</label>
+            <div class="radio-group">
+              <label><input type="radio" name="gender" value="male">Male</label>
+              <label><input type="radio" name="gender" value="female">Female</label>
+              <label><input type="radio" name="gender" value="other">Other</label>
+            </div>
+          
+          
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" id="phone-number" name="phone-number">
+          
+          
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email">
+         
+          
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="3"></textarea>
+          
+          
+            <label for="state">State</label>
+            <select id="state" name="state">
+              <option value="">Select State</option>
+              <option value="">Kozhikode</option>
+              <option value="">Kannur</option>
+              <option value="">Kollam</option>
+              <!-- Add your state options here -->
+            </select>
+          
+          
+            <label for="city">City</label>
+            <select id="city" name="city">
+              <option value="">Select City</option>
+              <option value="">Kochi</option>
+              <option value="">Kakkanad</option>
+              <option value="">Kallayi</option>
+
+              <!-- Add your city options based on state selection here -->
+            </select>
+          
+          
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" >
+          
+          
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" >
+          
+          
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" >
+          
+          
+            <button type="submit">Sign Up</button>
+          
+        </form>
+      </div>
+</body>
+</html>
