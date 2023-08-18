@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Condensed:wght@300&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\rgstrn.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form action="#" method="post">
+          
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name">
+          
+          
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name">
+          
+          
+            <label for="date-of-birth">Date of Birth</label>
+            <input type="date" id="date-of-birth" name="date-of-birth">
+          
+          
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age">
+          
+          
+            <label>Gender</label>
+            <div class="radio-group">
+              <label><input type="radio" name="gender" value="male">Male</label>
+              <label><input type="radio" name="gender" value="female">Female</label>
+              <label><input type="radio" name="gender" value="other">Other</label>
+            </div>
+          
+          
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" id="phone-number" name="phone-number">
+          
+          
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email">
+         
+          
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="3"></textarea>
+          
+          
+            <label for="state">State</label>
+            <select id="state" name="state">
+              <option value="">Select State</option>
+              <option value="">Kozhikode</option>
+              <option value="">Kannur</option>
+              <option value="">Kollam</option>
+              <!-- Add your state options here -->
+            </select>
+          
+          
+            <label for="city">City</label>
+            <select id="city" name="city">
+              <option value="">Select City</option>
+              <option value="">Kochi</option>
+              <option value="">Kakkanad</option>
+              <option value="">Kallayi</option>
+
+              <!-- Add your city options based on state selection here -->
+            </select>
+          
+          
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" >
+          
+          
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" >
+          
+          
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" >
+          
+          
+            <button type="submit">Sign Up</button>
+          
+        </form>
+      </div>
+
+
+
+      <script>
+        document.getElementById('first-name').addEventListener("focusin",focusFuctn);
+        document.getElementById('first-name').addEventListener("focusout",outFuctn);
+
+
+        function focusFuctn()
+        {
+          document.getElementById('first-name').style.backgroundColor = "red";
+          document.getElementById('first-name').style.color = "white";
+
+        }
+
+        function outFuctn()
+        {
+          document.getElementById('first-name').style.backgroundColor = "";
+        }
+      </script>
+</body>
+</html>
