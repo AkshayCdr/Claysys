@@ -1,0 +1,181 @@
+TASK -2 
+________________________________
+
+create database project1;
+
+use project1;
+
+CREATE TABLE Login (
+    id INT  PRIMARY KEY,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE ContactUs (
+    id INT  PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    message TEXT 
+);
+
+
+CREATE TABLE Registration (
+    id INT PRIMARY KEY  ,
+    first_name VARCHAR(25) NOT NULL,
+    last_name VARCHAR(25) ,
+    date_of_birth DATE NOT NULL,
+    age INT ,
+    gender char(1) ,
+    phone_number VARCHAR(20) ,
+    email VARCHAR(255) NOT NULL,
+    address TEXT ,
+    state VARCHAR(100) ,
+    city VARCHAR(100) ,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+
+INSERT INTO Login (id, email, password)
+VALUES
+    (1, 'user1@example.com', 'password1'),
+    (2, 'user2@example.com', 'password2'),
+    (3, 'user3@example.com', 'password3'),
+    (4, 'user4@example.com', 'password4'),
+    (5, 'user5@example.com', 'password5'),
+    (6, 'user6@example.com', 'password6');
+
+
+INSERT INTO ContactUs (id, name, email, message)
+VALUES
+    (1, 'John Doe', 'john@example.com', 'This is a message from John.'),
+    (2, 'Jane Smith', 'jane@example.com', 'Hello, I have a question.'),
+    (3, 'Alice Johnson', 'alice@example.com', 'Feedback on your service.'),
+    (4, 'Bob Brown', 'bob@example.com', 'Issue with the website.'),
+    (5, 'David Lee', 'david@example.com', 'I need help with my account.'),
+    (6, 'Emily White', 'emily@example.com', 'Suggestions for improvement.');
+
+
+INSERT INTO Registration (id, first_name, last_name, date_of_birth, age, gender, phone_number, email, address, state, city, username, password)
+VALUES
+    (1, 'John', 'Doe', '1990-05-15', 32, 'M', '1234567890', 'john@example.com', '123 Main St', 'Kollam', 'Kochi', 'johndoe', 'securepassword1'),
+    (2, 'Jane', 'Smith', '1988-09-21', 33, 'F', '9876543210', 'jane@example.com', '456 Elm St', 'Kannur', 'thalassery', 'janesmith', 'securepassword2'),
+    (3, 'Alice', 'Johnson', '1995-02-10', 28, 'F', '5551234567', 'alice@example.com', '789 Oak St', 'Trivandrum', 'varkala', 'alicej', 'securepassword3'),
+    (4, 'Bob', 'Brown', '1982-11-03', 41, 'M', '1112223333', 'bob@example.com', '567 Pine St', 'FL', 'Calicut', 'Vadakara', 'securepassword4'),
+    (5, 'David', 'Lee', '2001-07-28', 20, 'M', '4445556666', 'david@example.com', '890 Maple St', 'WA', 'Kannur', 'payyannur', 'securepassword5'),
+    (6, 'Emily', 'White', '1998-12-15', 23, 'F', '7778889999', 'emily@example.com', '234 Birch St', 'IL', 'thrissur', 'ponnani', 'securepassword6');
+
+
+UPDATE Registration
+SET last_name = 'UpdatedLastName', age = 21, city = 'UpdatedCity'
+WHERE id = 5;
+
+select last_name,age,city from Registration;
+
+DELETE FROM Login
+WHERE id = 6;
+
+select * from Login;
+
+DELETE FROM Registration
+WHERE RIGHT(phone_number, 1) = '9';
+
+
+
+
+
+TASK - 3,4
+____________________________________________________
+
+
+use  tutorial;
+
+create table employe (
+E_id int primary key,
+Name varchar(25),
+Dept varchar(25),
+Salary  DECIMAL(10,2)
+);
+
+insert into employe values(1,'AKHIL','HR',12000);
+insert into employe values(2,'BABU','SLS',17000);
+insert into employe values(3,'SHAJI','SLS',42000);
+insert into employe values(4,'MARK','MRK',62000);
+insert into employe values(5,'HARI','HR',10000);
+
+select max(salary) from employe where salary not in (select MAX(salary) from employe);
+
+select name from employe where Salary =  (select max(salary) from employe where salary not in (select MAX(salary) from employe));
+
+select Dept,count(Dept) from employe group by Dept;
+
+
+
+
+
+
+TASK - 5,6
+______________________________________
+
+
+create table departements
+(
+	depId int primary key,
+	name varchar(25)
+	);
+
+create table employees
+(
+	empId int primary key,
+	depId int foreign key references departements(depId),
+	surname varchar(20),
+	name varchar(20),
+	);
+
+create table salary
+(
+	salary int primary key,
+	empId int foreign key references employees(empId),
+	gross money
+);
+
+insert into departements values(1,'Hr');
+insert into departements values(2,'Hr');
+insert into departements values(3,'dev');
+insert into departements values(4,'sales');
+insert into departements values(5,'ceo');
+
+
+
+insert into employees (empId,depId,name) values(1,3,'vasu');
+insert into employees (empId,depId,name) values(2,4,'senthil');
+insert into employees (empId,depId,name) values(3,4,'koya');
+insert into employees (empId,depId,name) values(4,3,'jp');
+insert into employees (empId,depId,name) values(5,2,'joy')
+
+insert into salary values(1,1,2300);
+insert into salary values(2,2,2300);
+insert into salary values(3,3,2300);
+insert into salary values(4,4,2300);
+
+select * from  employees,salary where employees.empId = salary.empId; 
+
+
+
+
+select name,gross from  employees,salary where employees.empId = salary.empId; 
+
+--join statements 
+
+
+
+select e.empID,e.name,s.gross from employees as e,salary as s where e.empId = s.empId;
+
+select e.empID,e.name,s.gross from employees as e join salary as s on e.empId = s.empId;
+
+select e.empID,e.name,s.gross from employees as e left outer join salary as s on e.empId = s.empId;
+
+select e.empID,e.name,s.gross from employees as e right outer join salary as s on e.empId = s.empId;
+
+
+
