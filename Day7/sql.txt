@@ -1,0 +1,46 @@
+----------stored procedure--------------
+
+create procedure spgetName
+as 
+begin 
+	select name,email from ContactUs 
+end
+
+spgetName
+
+
+create procedure spnameUid
+@id int
+as 
+begin
+	select name, email from ContactUs where Id = @id
+end
+
+spnameUid 4
+
+
+create procedure spcount
+@total int out
+as 
+begin
+	select @total = count(*) from ContactUs
+end
+
+Declare @Totalcount int
+Execute spcount @Totalcount out
+print @Totalcount
+
+
+create procedure spcountnew
+as 
+begin
+	return (select  count(*) from ContactUs)
+end
+
+Declare @Totalcount int
+Execute  @Totalcount = spcountnew
+print @Totalcount
+
+--crud operation
+
+
