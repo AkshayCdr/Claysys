@@ -1,0 +1,11 @@
+C:\Users\Akshay\Desktop\Claysys\Day9\CRUD_operations\CRUD_operations\obj\Debug\CRUD_operations.csproj.AssemblyReference.cache
+C:\Users\Akshay\Desktop\Claysys\Day9\CRUD_operations\CRUD_operations\obj\Debug\CRUD_operations.csproj.SuggestedBindingRedirects.cache
+C:\Users\Akshay\Desktop\Claysys\Day9\CRUD_operations\CRUD_operations\obj\Debug\CRUD_operations.Form1.resources
+C:\Users\Akshay\Desktop\Claysys\Day9\CRUD_operations\CRUD_operations\obj\Debug\CRUD_operations.Properties.Resources.resources
+C:\Users\Akshay\Desktop\Claysys\Day9\CRUD_operations\CRUD_operations\obj\Debug\CRUD_operations.csproj.GenerateResource.cache
+C:\Users\Akshay\Desktop\Claysys\Day9\CRUD_operations\CRUD_operations\obj\Debug\CRUD_operations.csproj.CoreCompileInputs.cache
+C:\Users\Akshay\Desktop\Claysys\Day9\CRUD_operations\CRUD_operations\bin\Debug\CRUD_operations.exe.config
+C:\Users\Akshay\Desktop\Claysys\Day9\CRUD_operations\CRUD_operations\bin\Debug\CRUD_operations.exe
+C:\Users\Akshay\Desktop\Claysys\Day9\CRUD_operations\CRUD_operations\bin\Debug\CRUD_operations.pdb
+C:\Users\Akshay\Desktop\Claysys\Day9\CRUD_operations\CRUD_operations\obj\Debug\CRUD_operations.exe
+C:\Users\Akshay\Desktop\Claysys\Day9\CRUD_operations\CRUD_operations\obj\Debug\CRUD_operations.pdb
