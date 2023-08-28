@@ -1,0 +1,14 @@
+C:\Users\Akshay\Desktop\Claysys\Day9\WatchWorld\WatchWorld\bin\Debug\WatchWorld.exe.config
+C:\Users\Akshay\Desktop\Claysys\Day9\WatchWorld\WatchWorld\bin\Debug\WatchWorld.exe
+C:\Users\Akshay\Desktop\Claysys\Day9\WatchWorld\WatchWorld\bin\Debug\WatchWorld.pdb
+C:\Users\Akshay\Desktop\Claysys\Day9\WatchWorld\WatchWorld\obj\Debug\WatchWorld.csproj.AssemblyReference.cache
+C:\Users\Akshay\Desktop\Claysys\Day9\WatchWorld\WatchWorld\obj\Debug\WatchWorld.csproj.SuggestedBindingRedirects.cache
+C:\Users\Akshay\Desktop\Claysys\Day9\WatchWorld\WatchWorld\obj\Debug\WatchWorld.Form1.resources
+C:\Users\Akshay\Desktop\Claysys\Day9\WatchWorld\WatchWorld\obj\Debug\WatchWorld.Properties.Resources.resources
+C:\Users\Akshay\Desktop\Claysys\Day9\WatchWorld\WatchWorld\obj\Debug\WatchWorld.csproj.GenerateResource.cache
+C:\Users\Akshay\Desktop\Claysys\Day9\WatchWorld\WatchWorld\obj\Debug\WatchWorld.csproj.CoreCompileInputs.cache
+C:\Users\Akshay\Desktop\Claysys\Day9\WatchWorld\WatchWorld\obj\Debug\WatchWorld.exe
+C:\Users\Akshay\Desktop\Claysys\Day9\WatchWorld\WatchWorld\obj\Debug\WatchWorld.pdb
+C:\Users\Akshay\Desktop\Claysys\Day9\WatchWorld\WatchWorld\obj\Debug\WatchWorld.ContactUs.resources
+C:\Users\Akshay\Desktop\Claysys\Day9\WatchWorld\WatchWorld\obj\Debug\WatchWorld.Login.resources
+C:\Users\Akshay\Desktop\Claysys\Day9\WatchWorld\WatchWorld\obj\Debug\WatchWorld.Registration.resources

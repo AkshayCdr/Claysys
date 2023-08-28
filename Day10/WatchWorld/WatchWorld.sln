@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WatchWorld", "WatchWorld\WatchWorld.csproj", "{B7746E72-D07C-412E-AC46-A4B58CA669E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7746E72-D07C-412E-AC46-A4B58CA669E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7746E72-D07C-412E-AC46-A4B58CA669E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7746E72-D07C-412E-AC46-A4B58CA669E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7746E72-D07C-412E-AC46-A4B58CA669E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD9F8D16-4288-4EF2-899D-B94613D027B6}
+	EndGlobalSection
+EndGlobal
