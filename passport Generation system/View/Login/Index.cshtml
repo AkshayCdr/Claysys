@@ -1,0 +1,90 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    
+    <link href="~/Content/css/Login.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <div class="login">
+        <div class="heading">
+            <h1>Login form</h1>
+        </div>
+        <div class="content">
+            <form class="form" id="form">
+                <div class="input-control">
+                    <input type="email"
+                           name="Email Address"
+                           placeholder="Email"
+                           class="email"
+                           id="email" />
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <input type="password"
+                           name="Password"
+                           placeholder="Password"
+                           class="password"
+                           id="password" />
+                    <div class="error"></div>
+                </div>
+
+                <div class="rememeber">
+                    <label class="checklabel">
+                        <input type="checkbox" class="checkbox" />
+                        Remember me
+                    </label>
+                    <a href="#" class="forget-password">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="button" id="button">Login</button>
+                <p>Not a member ? <a href="rgstrn.html">signup now</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="~/Scripts/Js/Login.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            console.log("Document ready!");
+            $('#button').click(function () {
+                var email = $('#email').val();
+                var password = $('#password').val();
+
+                var obj = {
+                    Email: email,
+                    Password: password
+                }
+
+                SubmitForm(obj);
+
+
+            });
+        });
+
+
+        function SubmitForm(obj) {
+            $.ajax({
+                url: "/Login/Index",
+                method: "POST",
+                data: obj,
+                success: function (data) {
+                    console.log(data);
+                },
+                error: function (err) {
+                    console.log(err);
+                    console.log("Failed");
+                }
+            });
+        }
+
+    </script>
+
+</body>
+</html>

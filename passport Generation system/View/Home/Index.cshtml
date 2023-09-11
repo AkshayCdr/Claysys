@@ -1,0 +1,154 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="~/Content/css/index.css" rel="stylesheet" />
+   
+</head>
+<body>
+
+    <div class="main">
+        <div class="img-slider">
+            <div class="slide active">
+                <img src="imgs\2a34e89cf4dacfefd6057bacd997b2c60c2d2a1a.jpg"
+                     alt=""
+                     height="300px"
+                     width="300px" />
+                <div class="info">
+                    <h2>A. Lange & Söhne</h2>
+                    <p>
+                        Introduced in 1999, only 5 years after A. Lange & Söhne introduced
+                        its first collection in 1994, the Datograph (Dat(e) +
+                        (Chron)ograph) is one of the first in-house developed chronograph
+                        wristwatches following the quartz crisis.
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="imgs\Cartier_Tank.jpg"
+                     alt=""
+                     height="300px"
+                     width="300px" />
+                <div class="info">
+                    <h2>Cartier</h2>
+                    <p>
+                        The Tank was introduced in 1918, and entered full production in
+                        1919, when six pieces were built. Its lines and proportions are
+                        similar to those of tanks used on First World War battlefields.
+                        The Tank has become one of the most highly coveted and copied
+                        wristwatches of all time,
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="imgs\photo-1600003014755-ba31aa59c4b6.avif"
+                     alt=""
+                     height="300px"
+                     width="300px" />
+                <div class="info">
+                    <h2>Rolex</h2>
+                    <p>
+                        The Rolex Oyster Perpetual Datejust is a certified, self-winding
+                        chronometer wristwatch manufactured by Rolex. Rolex introduced the
+                        original Datejust (reference 4467) in 1945 to celebrate the
+                        company's 40th anniversary.
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="imgs\photo-1605101232508-283d0cd4909e.avif"
+                     alt=""
+                     height="300px"
+                     width="300px" />
+                <div class="info">
+                    <h2>Rolex</h2>
+                    <p>
+                        The first Rolex Day-Date was introduced in 1956, with references
+                        6510 (domed bezel) and 6511 (fluted bezel).
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="imgs\photo-1605544906466-6d3268a268bd.avif"
+                     alt=""
+                     height="300px"
+                     width="300px" />
+                <div class="info">
+                    <h2>Omega</h2>
+                    <p>
+                        The Omega Speedmaster Professional Chronograph was the first watch
+                        on the Moon, worn by Buzz Aldrin. First worn by Mercury astronaut
+                        Wally Schirra in 1962, the "Omega Speedmaster Professional
+                        Chronograph" was chosen by NASA to become the only chronograph
+                        certified for use on all missions since 1965
+                    </p>
+                </div>
+            </div>
+            <div class="navigation">
+                <div class="btn active"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/Js/Index.js"></script>
+
+    @*<script type="text/javascript">
+        var slides = document.querySelectorAll(".slide");
+        var btns = document.querySelectorAll(".btn");
+        let currentSlide = 1;
+
+        var manualNav = function (manual) {
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+
+                btns.forEach((btn) => {
+                    btn.classList.remove("active");
+                });
+            });
+
+            slides[manual].classList.add("active");
+            btns[manual].classList.add("active");
+        };
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                manualNav(i);
+                currentSlide = i;
+            });
+        });
+
+        var repeat = function (activeClass) {
+            let active = document.getElementsByClassName("active");
+            let i = 1;
+
+            var repeater = () => {
+                setTimeout(function () {
+                    [...active].forEach((activeSlide) => {
+                        activeSlide.classList.remove("active");
+                    });
+
+                    slides[i].classList.add("active");
+                    btns[i].classList.add("active");
+                    i++;
+
+                    if (slides.length == i) {
+                        i = 0;
+                    }
+                    if (i >= slides.length) {
+                        return;
+                    }
+                    repeater();
+                }, 10000);
+            };
+            repeater();
+        };
+        repeat();
+    </script>*@
+</body>
+</html>
